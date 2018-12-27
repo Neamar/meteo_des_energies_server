@@ -29,5 +29,5 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               ssh-keyscan meteodesenergies.neamar.fr >> ~/.ssh/known_hosts
-              git push dokku@meteodesenergies.neamar:meteo master -f
+              git push dokku@meteodesenergies.neamar.fr:meteo master -f
             fi
