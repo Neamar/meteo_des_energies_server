@@ -58,7 +58,7 @@ function formatDate(date) {
 
 let energyMix = [];
 let cachedAt = new Date(0);
-module.exports = async function getLiveData() {
+module.exports = async function getEnergyMix() {
   let date = new Date();
 
   if (date - cachedAt > EXPIRY_DURATION) {
