@@ -37,7 +37,7 @@ function getEmissionsForEnergy(energy, valueMWh) {
   let valueKWh = valueMWh * 1000;
   // From gram to ton
   // and from hour to minute
-  return emissionsPerEnergy[energy] * valueKWh / 1000 / 1000 / 60;
+  return parseFloat((emissionsPerEnergy[energy] * valueKWh / 1000 / 1000 / 60).toFixed(4));
 }
 
 
