@@ -10,7 +10,7 @@ function addNote(notes, energy, title, description) {
 }
 
 
-module.exports = function getContextualTip(energyMix, currentGauge) {
+module.exports = function getContextualTip(energyMix) { // , currentGauge
   let notes = [];
 
   let totalCarbonEmissions = energyMix.reduce((acc, energy) => acc + energy.co2Value || 0, 0);
@@ -29,7 +29,6 @@ module.exports = function getContextualTip(energyMix, currentGauge) {
         percentCarbon > percentEnergy ? `Mais ${percentCarbon}% des émissions carbones !` : `Pour seulement ${percentCarbon}% des émissions carbones !`
       );
     });
-
 
   let note = notes[Math.floor(Math.random() * notes.length)];
   return note;
