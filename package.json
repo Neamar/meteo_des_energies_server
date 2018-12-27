@@ -1,0 +1,19 @@
+{
+  "name": "meteodesenergies-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neamar/meteo_des_energies_server.git"
+  },
+  "author": "Neamar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neamar/meteo_des_energies_server/issues"
+  },
+  "homepage": "https://github.com/Neamar/meteo_des_energies_server#readme"
+}
