@@ -1,0 +1,6 @@
+# Wait 1s before starting
+WAIT=1
+TIMEOUT=3
+ATTEMPTS=10
+
+/
